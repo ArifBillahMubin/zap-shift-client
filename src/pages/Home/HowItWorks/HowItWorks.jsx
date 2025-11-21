@@ -3,8 +3,8 @@ import howItWorkLogo from '../../../assets/bookingIcon.png'
 
 const HowItWorks = () => {
     return (
-        <div className='max-w-6xl mx-auto px-2 md:px-4 lg:px-0'>
-            <h2 className='font-semibold text-secondary text-3xl mb-8'>How it works</h2>
+        <div className=''>
+            <h2 className='font-bold text-secondary text-3xl mb-8'>How it works</h2>
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 <div className=''>
                     <div className='space-y-2 bg-base-100 rounded-3xl p-8'>
