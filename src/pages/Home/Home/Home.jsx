@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../banner/Banner';
 import HowItWorks from '../HowItWorks/HowItWorks';
 import OurServices from '../ourServices/OurServices';
+import Brands from '../Barands/Brands';
 
 const Home = () => {
     return (
@@ -12,6 +13,9 @@ const Home = () => {
             </div>
             <div className='pt-12 md:pt-16 max-w-[1380px] mx-auto px-2 md:px-4 lg:px-0'>
                 <OurServices></OurServices>
+            </div>
+            <div className='pt-12 md:pt-16 max-w-6xl mx-auto px-2 md:px-4 lg:px-0'>
+                <Brands></Brands>
             </div>
             
         </div>
