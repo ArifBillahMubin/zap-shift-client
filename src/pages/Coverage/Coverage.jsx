@@ -24,8 +24,8 @@ const Coverage = () => {
         }
     }
     return (
-        <div>
-            <h1>All map</h1>
+        <div className='bg-base-100 rounded-2xl p-5 md:10 lg:p-20 my-12 md:my-16 space-y-4 md:space-y-8'>
+            <h1 className='font-bold text-3xl md:text-6xl text-secondary'>We are available in 64 districts</h1>
 
             <div>
                 <form onSubmit={handleSearch} className="join w-full max-w-xl">
@@ -51,12 +51,12 @@ const Coverage = () => {
                 </form>
             </div>
 
-            <div className='border h-[800px]'>
+            <div className='border h-[500px]'>
                 <MapContainer
                     center={position}
                     zoom={7}
                     scrollWheelZoom={false}
-                    className='h-[800px]'
+                    className='h-[500px]'
                     ref={mapRef}
                     >
 
