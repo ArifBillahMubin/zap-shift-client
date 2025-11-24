@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../Hooks/useAuth';
+import { Link } from 'react-router';
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -19,6 +20,10 @@ const Register = () => {
 
     return (
         <div className=''>
+            <div>
+                <h1 className='text-3xl font-bold text-secondary'>Create an Account</h1>
+                <p>Register with ZapShift</p>
+            </div>
             <form onSubmit={handleSubmit(handleRegistration)}>
                 <fieldset className="fieldset w-[300px]">
 
@@ -59,9 +64,11 @@ const Register = () => {
                         errors.password?.type === 'pattern' && <p className='text-red-500'>Password must include at least one uppercase letter and one number.</p>
                     }
 
-                    <div><a className="link link-hover">Forgot password?</a></div>
 
-                    <button className="btn btn-neutral mt-4">Login</button>
+                    <button className="btn btn-primary text-black mt-4">Registration</button>
+
+
+                    <p>Already have an account? <Link to={'/login'} className='text-primary hover:text-secondary'>Login</Link></p>
                 </fieldset>
             </form>
         </div>

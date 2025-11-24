@@ -6,7 +6,7 @@ import Logo from '../../components/Logo/Logo';
 const AuthLayout = () => {
     return (
         <div>
-            <div className='flex h-screen relative'>
+            <div className='flex flex-col-reverse md:flex-row h-screen relative'>
                 <div className='flex-1 flex justify-center items-center bg-base-100'>
                     <Outlet></Outlet>
                 </div>
