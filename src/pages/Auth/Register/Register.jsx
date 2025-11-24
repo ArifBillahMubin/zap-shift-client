@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../Hooks/useAuth';
 import { Link } from 'react-router';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -71,6 +72,7 @@ const Register = () => {
                     <p>Already have an account? <Link to={'/login'} className='text-primary hover:text-secondary'>Login</Link></p>
                 </fieldset>
             </form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
